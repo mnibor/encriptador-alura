@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="es">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="author" content="Marcelo A. Robin" />
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+        <link rel="icon" href="images/logo-oracle.jpg">
+        <title>Challenge #1 - Alura</title>
+    </head>
+
+    <body>
+        <div class="container mt-4">
+            <h2>Challenge #1 - Encriptador de Mensajes</h2>
+            <div class="row mt-4">
+                <div class="col-6">
+                    <div class="card border-secondary">
+                        <h5 class="card-header">Encriptar & Desencriptar</h5>
+                        <div class="card-body">
+                            <div class="mb-3">
+                                <label for="txtOriginal" class="form-label">Escriba un texto en minúsculas que desee Encriptar / Desencriptar</label>
+                                <textarea class="form-control" id="txtOriginal" rows="3"></textarea>
+                                <a href="#" class="btn btn-sm btn-primary mt-3 btnEncrypt"><i class="bi bi-lock"></i>Encriptar</a>
+                                <a href="#" class="btn btn-sm btn-danger mt-3 btnDecrypt"><i class="bi bi-unlock"></i>Desencriptar</a>
+                                <a href="#" class="btn btn-sm btn-success mt-3 float-end btnClean"><i class="bi bi-trash"></i>Limpiar</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="card border-secondary">
+                        <h5 class="card-header">Resultado</h5>
+                        <div class="card-body">
+                            <div class="mb-3">
+                                <label for="txtResult" class="form-label">Resultado del proceso de encriptación / desencriptación</label>
+                                <textarea class="form-control txtResult" id="txtResult" rows="3"></textarea>
+                                <a onclick="copyToClipBoard()" class="btn btn-sm btn-primary mt-3 float-end btnCopy"><i class="bi bi-clipboard"></i>Copiar</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="js/app.js" charset="utf-8"></script>
+        <script src="js/encrypt.js" charset="utf-8"></script>
+        <script src="js/decrypt.js" charset="utf-8"></script>
+        <script src="js/copy.js" charset="utf-8"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>
